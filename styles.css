@@ -350,6 +350,79 @@ body {
     color: var(--text-primary);
 }
 
+/* Hero Name Section */
+.hero-name {
+    margin-bottom: var(--spacing-6);
+}
+
+.name-greeting {
+    display: block;
+    font-size: var(--font-size-xl);
+    font-weight: 400;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-2);
+}
+
+.name-title {
+    font-size: var(--font-size-6xl);
+    font-weight: 800;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.1;
+    margin: 0;
+}
+
+/* Hero Role Section */
+.hero-role {
+    margin-bottom: var(--spacing-8);
+}
+
+.role-title {
+    font-size: var(--font-size-3xl);
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-3);
+}
+
+.role-description {
+    font-size: var(--font-size-lg);
+    color: var(--text-secondary);
+    font-weight: 400;
+}
+
+/* Hero Value Props */
+.hero-value-props {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+    margin-bottom: var(--spacing-8);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.value-prop {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+    padding: var(--spacing-4) var(--spacing-6);
+    background: rgba(139, 92, 246, 0.05);
+    border: 1px solid rgba(139, 92, 246, 0.1);
+    border-radius: 12px;
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    color: var(--text-primary);
+    justify-content: flex-start;
+}
+
+.value-prop i {
+    color: var(--primary-purple);
+    font-size: var(--font-size-lg);
+    flex-shrink: 0;
+}
+
 .title-line-1 {
     display: block;
     background: var(--gradient-primary);
@@ -497,6 +570,33 @@ body {
     .hero {
         padding: var(--spacing-20) 0 var(--spacing-12);
         min-height: 90vh;
+    }
+    
+    .name-greeting {
+        font-size: var(--font-size-lg);
+    }
+    
+    .name-title {
+        font-size: var(--font-size-5xl);
+    }
+    
+    .role-title {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .role-description {
+        font-size: var(--font-size-base);
+    }
+    
+    .hero-value-props {
+        gap: var(--spacing-3);
+        margin-bottom: var(--spacing-6);
+    }
+    
+    .value-prop {
+        padding: var(--spacing-3) var(--spacing-4);
+        font-size: var(--font-size-sm);
+        justify-content: center;
     }
     
     .hero-title {
